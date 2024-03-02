@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-        <nav id="navber">
+ <nav id="navber">
     <div class="container">
       <div class="nav_wrapper">
         <div class="logo">
@@ -15,20 +15,23 @@ const Navbar = () => {
         </div>
         <div class="menu">
           <ul>
-             <Link to={"/"}>Home</Link>
+             <Link className={"link-styles"} to={"/"}>Home</Link>
+             <Link className={"link-styles"} to={"/About"}>About</Link>
+             <li className={"link-styles"} to={"/Activites"}>Activites<i class="fa-solid fa-angle-down"></i>
+
+                 <ul class="dropdown">
+                    <li>Home</li>
+                    <Link className={"styles"}>Home</Link>    
+                    <Link className={"styles"}>Home</Link>      
+                    <Link className={"styles"}>Home</Link>        
+                    <Link className={"styles"}>Home</Link> 
+                      
+                </ul>  
+             </li>
+             <Link className={"link-styles"} to={"/News"}>Latetst News</Link>
+             <Link className={"link-styles"} to={"/Contact"}>Contact</Link>
+
   
-             <Link to={"About"}>About</Link>
-             <Link to={"Activites"}>Activites<i class="fa-solid fa-angle-down"></i>
-             <ul class="dropdown">
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-               </ul>
-             </Link>
-             <Link to={"LatetstNews"}>Latetst News</Link>
-             <Link to={"LatetstNews"}>News</Link>
 
           </ul>
         </div>

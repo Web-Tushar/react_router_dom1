@@ -81,7 +81,7 @@ text-transform: capitalize;
 
 /* navber start here  */
 #navber{
-  background-color: transparent;
+  background-color:#0f41526f;
   padding: 20px 0;
   position: absolute;
   left: 0;
@@ -117,22 +117,25 @@ text-transform: capitalize;
   align-items: center;
 }
 
-.menu>ul li a{
+.menu>ul .link-styles{
   color: var(--sada);
   font-family: var(--ibm);
   font-size: 18px;
   font-weight: 700;
   line-height: normal;
-  transition: all linear .3s;
+  transition: all linear ;
   
 }
-.menu ul li a:hover{
+.menu ul .link-styles:hover{
   color: var(--praimary);
 }
-.menu ul li a i{
+.menu ul .link-styles:active{
+  color: red;
+}
+.menu ul .link-styles i{
   margin-left: 7px;
 }
-.menu ul li{
+.menu ul .link-styles{
   position: relative;
 }
 
@@ -149,11 +152,11 @@ text-transform: capitalize;
   transition: .3s;
 }
 
-.menu ul li:hover .dropdown{
+.menu ul li:hover.dropdown{
   opacity: 1;
   visibility: visible;
 }
-.dropdown li{
+.dropdown.styles{
   padding: 8px;
   transition: .3s;
   border-bottom: 1px solid greenyellow;
